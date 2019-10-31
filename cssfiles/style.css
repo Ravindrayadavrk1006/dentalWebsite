@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari:100&display=swap');
+:root
+{
+    --primarycolor:rgb(136, 136, 246);
+    --linkcolor:rgb(62, 235, 31);
+    --bg-color: #D8D8D8;
+    --blend1:rgba(45, 58, 129, 0.52);
+    --blend2:rgba(49, 55, 124, 0.73);
+    --projectGreen:rgb(15, 155, 66);
+}
+body{
+    margin: 0%;
+    overflow-x: hidden;
+}
+.navbar
+{
+    display: flex;
+    height: 80px;
+    align-items: center;   
+}
+.navbar div
+{
+    justify-content: center;
+    padding-left: 20px;
+    text-align: center;
+}
+.navbar>.dentalSolution
+{
+    text-align: center;
+}
+.navbar>.BOOKING
+{
+    text-align: left;
+}
+.BOOKING
+{
+    flex: 2; 
+}
+
+.ABOUT,.HOME,.SERVICE,.PRICING,.CONTACT
+{
+    flex: 1;
+    font-family: 'Merriweather', serif;
+    transition: all .5s ease 0s;
+}
+button
+{
+    transition: all .5s ease-in 0s;
+}
+button:hover
+{
+    height: 45px;
+    width:185px;
+    font-size: 16px;
+    background-color:rgb(47, 108, 158);
+}
+.ABOUT a:hover,.HOME a:hover,.SERVICE a:hover,.PRICING a:hover,.CONTACT a:hover{
+    color: rgb(62, 235, 31);
+    font-size:18px;
+}
+.dentalSolution
+{
+    font-family: 'Great Vibes', cursive;
+    flex:2.5;
+    font-size: 30px;
+
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+.bookingButton
+{
+    height: 40px;
+    width:180px; 
+    border-radius: 20px;
+    background-color: var(--primarycolor);
+    border: none;
+    cursor: pointer;
+    color:black;
+    font-weight: bold;
+}
+/*address container*/
+.addressContainer
+{
+    background-color: #f0f0f0;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0px 8%;
+    height: 30px;
+    font-family: sans-serif;
+    font-size:12px;
+    font-weight: 200;
+}
+/* .addressContainer div
+{
+    border: 1px solid black;
+    margin-left: 30px;
+} */
+/* .addressContainer div
+{
+    margin-left: 40px;
+} */
+.socialMedia
+{
+    margin-left: auto;
+    letter-spacing: 5px;
+}
+.address,.email
+{
+    margin-left:50px;
+    font-weight:200;
+}
+.addressContainer img {
+    height: 20px;
+    width: 20px;
+}
+.addressContainer a:hover
+{
+    color:#0c7432; 
+}
+.mainImage
+{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height: 500px;
+    border:1px solid black;
+}
+.slideshow
+{
+    position: relative;
+    margin:auto;
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    );
+    font-family: serif;
+}
+.text
+{
+    position: absolute;
+    color:white;
+    font-size:50px;
+    font-weight: 500;
+    padding:8px 12px;
+    width: 100%;
+    top:200px;
+    text-align: center;
+    /* transition: font-size 1s linear 0s; */
+    -webkit-animation-name: change;
+    /* animation-name: change; */
+    animation-duration: 4s;
+    animation-delay: -.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes change
+{
+    0%{
+        letter-spacing: 10px;
+    }
+    100%
+    {
+        letter-spacing: 3px;
+    }
+}
+.slideshow img{
+    opacity: .5;
+}
+
+/* image text */
+
+.numbertext
+{
+    columns: #f2f2f2;
+    font-size: 25px;
+    padding:8px 12px;
+    position:absolute;
+    top:0;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+.aboutUs
+{
+    height: 600px;
+    display: flex;
+    text-align: center;
+    margin:80px;
+}
+
+.aboutUsImage
+{
+    flex:1;
+    
+}
+.aboutUs img
+{
+    height: 600px;
+    opacity: .7;
+    background-blend-mode: lighten 
+    /* transform: scaleX(1.1); */
+}
+.aboutUsInfo
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: auto;
+}
+.aboutUsInfo div
+{
+    flex:1;
+}
+.aboutUsHeading h1
+{
+       padding-bottom: 10px;
+}
+.line
+{
+    margin-top:20px;
+    /* padding-top: 5px; */
+    margin-right:auto;
+    height: 3px;
+    /* width: 150px; */
+    width: 150px;
+    background-color: rgb(136, 136, 246);
+    border: none;
+    box-direction: none;
+    animation: size-change 3s 0s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+}
+@keyframes size-change
+{
+    0%
+    {
+        width: 60px;
+    }
+    100%
+    {
+        width:150px;
+    }
+}
+.aboutUsInfo p{
+    opacity: .8;
+}
+.aboutUsInfo  
+.slider
+{
+    
+    height: 15px;
+    width:500px;
+    background-color:grey;
+    opacity: .3;
+}
+.overlay
+{
+    position: relative;
+    height: 15px;
+    top:-15px;
+    background-color: var(--primarycolor);
+}
+.firstoverlay
+{
+    width:calc((80/100)*500px);
+}
+.secondoverlay
+{
+    width:calc(.65*500px);
+    background-color: var(--primarycolor);
+    transition:background-color 2s ease-in-out 0s; 
+}
+.thirdoverlay
+{
+    width:calc(.85*500px);
+}
+.percentage
+{
+    position: relative;
+    top:-40px;
+    left:450px;
+}
+.aboutUsInfo h3:hover
+{
+    color:var(--primarycolor);
+}
+.iconrepresent
+{
+    display:flex;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:10%;
+    margin-right:10%;
+    padding:20px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.iconrepresent img
+{
+    height: 100px;
+    width: 100px;
+    
+}
+svg{
+    fill: var(--primarycolor);
+
+}
+/* 
+ .ourServicesContainer
+{
+    margin-top:3%;
+    margin-bottom: 3%;
+    width: 100%;
+    border:1px solid black;
+    height: 500px;
+    background-image: 
+    linear-gradient(
+      rgba(141, 138, 138, 0.5),
+      rgba(148, 146, 146, 0.5)
+    ), url('../images/ourServicesBackground.jpg');
+  
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+
+  
+}
+.overlaycontainer
+{
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center
+  
+}
+.ourServicesInfo
+{
+    flex:1
+}
+.ourServicesImage
+{
+    flex:1;
+    text-align: center;
+}
+.overlaycontainer div{
+    border: 1px solid green;
+}
+.ourServicesImage img
+{
+    height:100%;
+    width:90%;
+    margin-right: 20px;
+    background-color: black;
+}
+
+.ourServicesInfo h1
+{
+    position: relative;
+    float:left;
+    margin-left: 80px;
+    bottom:150px;
+    color: white;
+}
+.newline
+{
+    position: relative;
+    height:4px;
+    width: 100px;
+    color:white;
+    bottom: 90px;
+    border:none;
+    margin-left: 80px;  
+    background-color: rgb(136, 136, 246);
+}
+.ServicesSvgImages
+{
+    display: flex;
+    
+    justify-content: space-between
+}
+.ServicesSvgImages img
+{
+    
+    margin-left:-200px;
+}  */ 
+
+.servicesContainer
+{
+    background-image:
+        linear-gradient(to bottom, rgba(45, 58, 129, 0.52), rgba(49, 55, 124, 0.73)),url('../images/ourServicesBackground.jpg');
+    background-color: rgba(25, 78, 107, 0.5);
+    display: flex;
+    align-items: flex-start;
+    align-content: space-between;
+    padding-right:100px;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+    color:white;
+    padding-left: -20px;
+
+
+} .description table
+{ 
+    text-align: center;
+
+}
+table td:hover
+{
+    color:var(--primarycolor);
+}
+.serviceImage
+{
+    margin-left: auto;
+}
+.last1
+{
+    padding-left: 50px;
+   
+} 
+.serviceImage img
+{
+    margin-top: 50px;
+    height: 400px;
+    widows: 400px;
+}
+.ourServicesHeading
+{
+    padding-bottom: 50px;
+}
+.line-1
+{
+    background-color:white;
+
+}
+.line-1:hover
+{
+    color:green ;
+}
+/* doctor image section */
+.ourDentist
+{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.ourDentist h1
+{
+   float: left;
+   margin-left: 20px;
+}
+.ourDentist img{
+    position: relative;
+    top:80px;
+    left: -80px;
+}
+.smallOverlay
+{
+    position: relative;
+    background-image: linear-gradient(var(--blend1),var(--blend2));
+    height: 65px;
+    width: 400px;
+    left: 20px;
+    text-align: center;
+    color: white;
+    top: 2px;
+}
+.smallOverlay h2
+{
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.healthTips
+{
+    margin-top: 100px;
+
+}
+.line4{
+    position: relative;
+    left:620px;
+}
+.tipsSection
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -13px;
+}
+/* tipTemplate */
+.tipsExample
+{
+    margin: 50px;
+    height: 500px;
+    width: 360px;
+    background-color: white;
+    box-shadow: 0px 2px 5px grey;
+}
+.tipsExample img{
+    height: 250px;
+    width: 360px;
+}
+.tipDescipt
+{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.tipDescipt p{
+    opacity: .8;
+}
+.dataAndComment
+{
+    margin-top: 30px;
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    opacity: .7;
+}
+
+.dataAndComment img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 3px;
+}
+.dataAndComment div:hover
+{
+    opacity: 1;
+}
+
+/* tipTemplate */
+
+
+/* footer */
+.footer
+{
+    background-image: 
+        linear-gradient(var(--blend1),var(--blend2)),url("../images/3.jpg");
+    height: 350;
+    width: auto;
+    color: white;
+    padding: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.footerUpperPart
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+}
+.inputBox img
+{
+    height: 10px;
+    width: 10px;
+
+}
+
+ 
+.linkIcon img
+{
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+}
+.footer1
+{
+    flex:1.5;
+    text-align: left;
+    margin-right: 30px;
+}
+.footer2
+{
+    flex:1;
+}
+.footer3
+{
+    flex:1;
+}
+.footer4
+{
+    flex:1;
+    position: relative;
+    bottom:5px;
+}
+.footer4 input
+{
+    height: 33px;
+}
+.footer4 button
+{   
+    position: relative;
+    right: 5px;
+    background-color: rgb(15, 155, 66);
+    border:none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.linkIcon
+{
+    position: relative;
+    top: 10px;
+
+    /* padding-top: 20px; */
+}
+.heartImage
+{
+    height: 20px;
+    width: 20px;
+}
+.footer3 a{
+    color: white;
+}
+.lowerfooter
+{
+    text-align: center;
+}
+.footer3 a:hover
+{
+    color: green;
+}
+.lowerfooter img{
+    position: relative;
+    top: 5px;
+}
+.footer1 img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px ;
+}
+.footer table{
+  border-collapse: collapse;   
+}
+.footer td{
+    padding-right: 1em;
+    padding-top:.5em;
+}
+/* footer end */
+
+/* CommentSection */
+.commentSection
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding:80px;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100px;
+    width: auto;
+    background-image: linear-gradient(var(--blend1),var(--blend2)),url("../images/7.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat; 
+}
+.commentSection div
+{
+    margin-right: 50px;
+}
+.commentSection img
+{
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+
+}
+.commentDescription
+{
+    
+    text-align: left;
+}
