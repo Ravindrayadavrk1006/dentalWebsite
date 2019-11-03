@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../cssfiles/style.css">
+    <link rel="stylesheet" href="../cssfiles/contact.css"> 
+    <style>
+        #map{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 100%;
+            height: 800px;
+            background-color: grey;
+        }
+    </style>
+    <script>
+        function initMap(){
+            //location
+            var mylocation={lat:31.255545,lng:75.699233};
+            //centering the location
+            var map=new google.maps.Map(
+                document.getElementById('map'),{zoom:4,center:mylocation});
+            //marker the position 
+            var marker=new google.maps.Marker({position:mylocation,map:map});
+        }
+    </script>
+</head>
+<body>
+
+        <!-- address container -->
+    <div class="addressContainer">
+            <div class="address"><a href="#"><img src="../images/location.svg" alt=""> 28 SamantNagar,Phagwara,Punjab,India</a></div>
+            <div class="email"><a href="#"><img src="../images/newemail.svg" alt=""> Dental@gmail.com</a></div>
+            <div class="socialMedia"><a href="#"><img src="../images/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="../images/google-plus.svg" alt="google-plus"></a>
+            <a href="#"><img src="../images/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="../images/whatsapp.svg" alt="whatsapp"></a>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="dentalSolution"> <a href="#">DentalSolution</a> </div>
+            <div class="HOME"> <a href="index.html">HOME</a></div>
+            <div class="ABOUT"><a href="about.html">ABOUT</a> </div>
+            <div class="SERVICE"><a href="services.html">SERVICE</a> </div>
+            <div class="PRICING"><a href="blog.html">BLOG</a> </div>
+            <div class="CONTACT"><a href="contact.html">CONTACT</a></div>
+            <div  class="BOOKING"><button onclick="location.href='#';"class="bookingButton">BOOKING </button></div>
+        </div>
+
+        <!-- contact navbar -->
+        <div class="contactHeader">
+                <h1 >
+                    CONTACT
+                </h1>
+            </div>
+
+
+        <!-- adding google map -->
+        <div id="map">
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzyyvnnCQlgm48TbKgP9Ne-9GkkLTBxYI & callback=initMap">
+            </script>
+        </script>
+        </div>
+
+    <!-- contact info -->
+    <div class="info">
+        <div class="info1">
+            <div class="info11">
+                    <h2>Addess</h2>
+                    <p>Lovely professional University,Phagwara Jalandhar</p>
+                    <h2>Phone</h2>
+                    <p>+91.73550.1142.2</p>
+                    <h2>Fax</h2>
+                    <p>+91.2252.2250.125</p>
+                    <h2>Email</h2>
+                    <p>info.dentalSolution@gmail.com</p>
+            </div>
+            
+        </div>
+        <div class="info2">
+            <h1>Get In Touch</h1>
+            <input id="name" placeholder="Your name" type="text">
+            <input  id="email" placeholder="Your Email" type="text">
+            <br>
+            <br>
+            <br>            
+            <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <br>
+            <br>    
+            <button>Send Message</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">    
+            <div class="footerUpperPart">
+                    <div class="footer1">
+                        <h1><img src="../images/logo.svg" alt="">Dento</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolorem! Distinctio dolorum expedita veritatis temporibus eveniet, </p>
+                        <div><img src="" alt=""> address</div>
+                        <div><img src="" alt=""> phone number</div>
+                        <div><img src="" alt=""> email</div>
+                        
+                    </div>
+                    <div class="footer2">
+                        <h2>Opening Hours</h2>
+                        <table >
+                            <tr>
+                                <td>Mon-Wed</td>
+                                <td>        </td>
+                                <td>8.00-18.00</td>
+                            </tr>
+                            <tr>
+                                <td>Mon-Wed</td>
+                                <td></td>
+                                <td>8.00-18.00</td>
+                            </tr>
+                            <tr>
+                                <td>Mon-Wed</td>
+                                <td></td>
+                                <td>8.00-18.00</td>
+                            </tr>
+                            <tr>
+                                <td>Mon-Wed</td>
+                                <td></td>
+                                <td>8.00-18.00</td>
+                            </tr>
+                            <tr>
+                                <td>Mon-Wed</td>
+                                <td></td>
+                                <td>8.00-18.00</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- second table -->
+                    <div class="footer3">
+                            <h2>Quick Link</h2>
+                            <table style="color: white">
+                                <tr>
+                                    <td><a href="#">About</a></td>
+                                    <td><a href="#"></a></td>
+                                    <td><a href="#">FAQs</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Contact</a></td>
+                                    <td><a href="#"></a></td>
+                                    <td><a href="#">Policy</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">News</a></td>
+                                    <td><a href="#"></a></td>
+                                    <td><a href="#">Advisors</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Careers</a></td>
+                                    <td><a href="#"></a></td>
+                                    <td><a href="#">Dentist</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Services</a> </td>
+                                    <td></td>
+                                    <td><a href="#"> Legals</a></td>
+                                </tr>
+                            </table>
+                    </div>
+                    <div class="footer4">
+                        <h2>Newsletter</h2>
+                        <h4>We will sent out Weekly newest article and some great offers</h4>
+                        <div class="inputBox">
+                            <input type="email" name="Email Address" id="emailAddress">
+                            <span><button><img src="../images/enter.svg" alt=""></button></span>
+                        </div>
+                        <table class="linkIcon">
+                        <tr>
+                            
+                                <td><a href="#"><img src="../images/google-plus.svg" alt=""></a></td>
+                                <td><a href="#"><img src="../images/instagram.svg" alt=""></a></td>
+                                <td><a href="#"><img src="../images/whatsapp.svg" alt=""></a></td>
+                            
+                        </tr>
+                        </table>
+                    </div> 
+            </div>
+                <hr>
+                <p class="lowerfooter">Copyright ©2019 All rights reserved | This template is made with <img class="heartImage" src="../images/heart.svg" alt="heart"> RAVINDRA</p>
+            </div> 
+
+
+    
+    
+</body>
+</html>

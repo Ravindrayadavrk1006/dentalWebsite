@@ -1,0 +1,125 @@
+.blogHeader
+{
+    text-align: center;
+    margin-top: 0;
+    height: 150px;
+    background-image:
+        linear-gradient(to bottom, rgba(45, 58, 129, 0.52), rgba(49, 55, 124, 0.73)),url('../images/ourServicesBackground.jpg');
+    /* background-color: rgba(25, 78, 107, 0.5); */
+    margin-bottom: 60px;
+}
+.blogHeader h1
+{
+    position: relative;
+    top:60px;
+    color:white;
+    font-weight: bold;
+}
+.blogSection
+{
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    
+    align-items: right;
+    justify-content:top;
+    margin-bottom: 100px;
+}
+.part1
+{
+   flex: 2; 
+}
+
+.part2
+{
+    align-content: center;
+
+
+    flex: 1;
+}
+.selfPart
+{
+    margin-right:60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.imgTip
+{
+    flex:1
+}
+.tipDesrcipt
+{
+    margin-left: 30px;
+    width: 80%;
+
+    flex:1
+}
+.imgTip img
+{
+    height: 120%;
+    width: 100%;
+    border-radius: 2%;
+
+}
+/* //part 2 working */
+.part2 input{
+    height: 50px;
+    width: 350px;
+    border-radius: 2%;
+    border: 1px solid #cccccc;
+}
+.part2 input::placeholder
+{
+    font-size: 20px;
+    padding-left: 20px;
+}
+table
+{
+    
+    border-spacing: 0 1em;
+}
+th
+{
+    color: grey;
+}
+hr{
+    border: 1px solid #4f5257;
+    width: 150%
+}
+
+.newsL
+{
+    color: #4a4545;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.newsL1 img
+{
+    height:120px;
+    width: 91px;
+}
+.newsL div
+{
+    margin-right: 10px;
+}
+.adbanner
+{
+    height: 200px;
+    margin-top: 150px;
+    text-align: center;
+    background-image:
+    linear-gradient(to bottom, rgba(45, 58, 129, 0.52), rgba(49, 55, 124, 0.73)),url('../images/12.jpg');;
+}
+
+.adbanner h3
+{
+    color:white;
+    position: relative;
+    top:90px;
+}
